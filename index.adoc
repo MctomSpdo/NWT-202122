@@ -9,6 +9,20 @@ ifndef::imagesdir[:imagesdir: images]
 
 == Overview
 
+=== Ziel
+
+Erlernen von Netzwerkaufbau und die Dokumentation des Aufbaus. Auch in der Zukunft werden wir so etwas benötigen. Falls der Fall eintritt, dass wir ein Netzwerk aufbauen und es jemand anderes Warten muss, kann derjenige nicht verstehen, wie das Netzwerk aufgebaut ist.
+
+=== Unterziele
+
+==== Router Aufsetzung
+
+Beim Auszug wird ein neues Netzwerk aufgebaut, um es richtig aufbauen zu können und verstehen was passiert, ist dieses Projekt sehr wichtig.
+
+==== PFSense / Proxy / UFW
+
+Um Firewalls zu verstehen und um ein Netzwerk sicherzumachen, haben wir drei verschiedene Firewalls eingebaut. PFSense ist eine VM und der Proxy befindet sich in einem Container. UFW ist die interne Firewall, die wir in allen Maschinen außer Router und PFSense verwenden.
+
 === IP-Adressen:
 Die IP-Adressen der CT und Vms:
 
@@ -231,7 +245,7 @@ Eine eigene Seite hat derzeit keine Priorität und wird aktuell nach hinten vers
 == Lubuntu
 Eine VM mit Lubuntu Desktop wurde eingerichtet, und in das Netzwerk eingebunden. Zu dieser kann jederzeit eine SSH oder RDP Verbindung aufgebaut werden
 
-IMPORTANT: Der Bildschirmschoner sollte deaktiviert werden.
+IMPORTANT: Der Bildschirmschoner sollte deaktiviert werden, denn dies kann Rechenleistung verschwenden.
 
 === RDC
 Auf Lubuntu wurde eine RDC (Remote Desktop Connection) eingerichtet, sodass hier ebenfalls ein schnelles und einfaches Arbeiten möglich ist.
