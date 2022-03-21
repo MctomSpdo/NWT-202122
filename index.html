@@ -8,118 +8,118 @@
 <meta name="author" content="Lydia Reiter, Spindler Thomas">
 <title>Netzwerktechnik Dokumentation</title>
 <style>
-/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
-
-@import url(//fonts.googleapis.com/css?family=Noto+Sans);
-@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
-
-/* CUSTOMISATIONS */
-/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
-:root{
---maincolor:#282c34;
---primarycolor:#f39c12;
---secondarycolor:#03a9f4;
---tertiarycolor:#4db6ac;
---sidebarbackground:#21252b;
---linkcolor:#f44336;
---linkcoloralternate:#ff9800;
---white:#FFFFFF;
-}
-
-/* custom added styles */
-.listingblock > .content > pre{
-  background: var(--sidebarbackground);
-  color: var(--white);
-}
-
-/* Text styles */
-body{font-family: "Noto Sans",sans-serif;background-color: var(--maincolor);color:var(--white);}
-
-h1{color:var(--primarycolor) !important;font-family:"Noto Sans",sans-serif;}
-h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Noto Sans",sans-serif;}
-.title{color:var(--white) !important;font-family:"Noto Sans",sans-serif;font-style: normal; font-weight: normal;}
-p{font-family: "Noto Sans",sans-serif ! important}
-#toc.toc2 a:link{color:var(--linkcolor);}
-blockquote{color:var(--tertiarycolor) !important}
-.quoteblock{color:var(--white)}
-code{color:var(--linkcoloralternate);background-color: var(--sidebarbackground) !important}
-
-
-/* Table styles */
-th{background-color: var(--maincolor);color:var(--white) !important;}
-td{background-color: var(--maincolor);color: var(--linkcoloralternate) !important}
-
-
-#toc.toc2{background-color:var(--sidebarbackground);}
-#toctitle{color:var(--white);}
-
-/* Responsiveness fixes */
-video {
-  max-width: 100%;
-}
-
-@media all and (max-width: 600px) {
-  table {
-    width: 55vw!important;
-    font-size: 3vw;
-  }
-}
-
-.exampleblock > .content {
-  background-color: var(--maincolor);
-}
-
-a {
-  color: var(--secondarycolor);
-}
-
-.admonitionblock td.icon .icon-tip::before {
-  text-shadow: none;
-  color: var(--white);
-}
-.admonitionblock td.icon .icon-note::before {
-  color: var(--tertiarycolor);
-}
-.admonitionblock td.icon .icon-important::before {
-  color: var(--linkcolor);
-}
-/*.admonitionblock td.icon .icon-caution::before {
-  color: var(--linkcoloralternate);
-}*/
-.admonitionblock td.icon .icon-warning::before {
-  color: var(--primarycolor);
-}
-
-#preamble > .sectionbody > .paragraph:first-of-type p {
-  color: var(--white);
-}
-
-.quoteblock blockquote::before {
-  color: var(--primarycolor);
-}
-.quoteblock .attribution cite, .verseblock .attribution cite {
-  color: var(--white);
-}
-.verseblock pre {
-  color: var(--white);
-}
-.quoteblock blockquote, .quoteblock blockquote p {
-  color: var(--white);
-}
-
-.sidebarblock {
-  background: var(--sidebarbackground);
-}
-.literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint {
-  background: var(--sidebarbackground);
-  color: var(--white);
-}
-
-#header .details {
-  color: var(--white);
-}
-#header .details span.email a {
-  color: var(--linkcoloralternate);
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+
+/* CUSTOMISATIONS */
+/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
+:root{
+--maincolor:#282c34;
+--primarycolor:#f39c12;
+--secondarycolor:#03a9f4;
+--tertiarycolor:#4db6ac;
+--sidebarbackground:#21252b;
+--linkcolor:#f44336;
+--linkcoloralternate:#ff9800;
+--white:#FFFFFF;
+}
+
+/* custom added styles */
+.listingblock > .content > pre{
+  background: var(--sidebarbackground);
+  color: var(--white);
+}
+
+/* Text styles */
+body{font-family: "Noto Sans",sans-serif;background-color: var(--maincolor);color:var(--white);}
+
+h1{color:var(--primarycolor) !important;font-family:"Noto Sans",sans-serif;}
+h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Noto Sans",sans-serif;}
+.title{color:var(--white) !important;font-family:"Noto Sans",sans-serif;font-style: normal; font-weight: normal;}
+p{font-family: "Noto Sans",sans-serif ! important}
+#toc.toc2 a:link{color:var(--linkcolor);}
+blockquote{color:var(--tertiarycolor) !important}
+.quoteblock{color:var(--white)}
+code{color:var(--linkcoloralternate);background-color: var(--sidebarbackground) !important}
+
+
+/* Table styles */
+th{background-color: var(--maincolor);color:var(--white) !important;}
+td{background-color: var(--maincolor);color: var(--linkcoloralternate) !important}
+
+
+#toc.toc2{background-color:var(--sidebarbackground);}
+#toctitle{color:var(--white);}
+
+/* Responsiveness fixes */
+video {
+  max-width: 100%;
+}
+
+@media all and (max-width: 600px) {
+  table {
+    width: 55vw!important;
+    font-size: 3vw;
+  }
+}
+
+.exampleblock > .content {
+  background-color: var(--maincolor);
+}
+
+a {
+  color: var(--secondarycolor);
+}
+
+.admonitionblock td.icon .icon-tip::before {
+  text-shadow: none;
+  color: var(--white);
+}
+.admonitionblock td.icon .icon-note::before {
+  color: var(--tertiarycolor);
+}
+.admonitionblock td.icon .icon-important::before {
+  color: var(--linkcolor);
+}
+/*.admonitionblock td.icon .icon-caution::before {
+  color: var(--linkcoloralternate);
+}*/
+.admonitionblock td.icon .icon-warning::before {
+  color: var(--primarycolor);
+}
+
+#preamble > .sectionbody > .paragraph:first-of-type p {
+  color: var(--white);
+}
+
+.quoteblock blockquote::before {
+  color: var(--primarycolor);
+}
+.quoteblock .attribution cite, .verseblock .attribution cite {
+  color: var(--white);
+}
+.verseblock pre {
+  color: var(--white);
+}
+.quoteblock blockquote, .quoteblock blockquote p {
+  color: var(--white);
+}
+
+.sidebarblock {
+  background: var(--sidebarbackground);
+}
+.literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint {
+  background: var(--sidebarbackground);
+  color: var(--white);
+}
+
+#header .details {
+  color: var(--white);
+}
+#header .details span.email a {
+  color: var(--linkcoloralternate);
 }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -138,9 +138,11 @@ a {
 <ul class="sectlevel1">
 <li><a href="#_overview">1. Overview</a>
 <ul class="sectlevel2">
-<li><a href="#_ip_adressen">1.1. IP-Adressen:</a></li>
-<li><a href="#_aufbau_des_netzwerkes">1.2. Aufbau des Netzwerkes:</a></li>
-<li><a href="#_ssh">1.3. SSH</a></li>
+<li><a href="#_ziel">1.1. Ziel</a></li>
+<li><a href="#_unterziele">1.2. Unterziele</a></li>
+<li><a href="#_ip_adressen">1.3. IP-Adressen:</a></li>
+<li><a href="#_aufbau_des_netzwerkes">1.4. Aufbau des Netzwerkes:</a></li>
+<li><a href="#_ssh">1.5. SSH</a></li>
 </ul>
 </li>
 <li><a href="#_grundausstattung">2. Grundausstattung</a>
@@ -171,7 +173,28 @@ a {
 <h2 id="_overview">1. Overview</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_ip_adressen">1.1. IP-Adressen:</h3>
+<h3 id="_ziel">1.1. Ziel</h3>
+<div class="paragraph">
+<p>Erlernen von Netzwerkaufbau und die Dokumentation des Aufbaus. Auch in der Zukunft werden wir so etwas benötigen. Falls der Fall eintritt, dass wir ein Netzwerk aufbauen und es jemand anderes Warten muss, kann derjenige nicht verstehen, wie das Netzwerk aufgebaut ist.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_unterziele">1.2. Unterziele</h3>
+<div class="sect3">
+<h4 id="_router_aufsetzung">1.2.1. Router Aufsetzung</h4>
+<div class="paragraph">
+<p>Beim Auszug wird ein neues Netzwerk aufgebaut, um es richtig aufbauen zu können und verstehen was passiert, ist dieses Projekt sehr wichtig.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_pfsense_proxy_ufw">1.2.2. PFSense / Proxy / UFW</h4>
+<div class="paragraph">
+<p>Um Firewalls zu verstehen und um ein Netzwerk sicherzumachen, haben wir drei verschiedene Firewalls eingebaut. PFSense ist eine VM und der Proxy befindet sich in einem Container. UFW ist die interne Firewall, die wir in allen Maschinen außer Router und PFSense verwenden.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ip_adressen">1.3. IP-Adressen:</h3>
 <div class="paragraph">
 <p>Die IP-Adressen der CT und Vms:</p>
 </div>
@@ -202,7 +225,7 @@ a {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_aufbau_des_netzwerkes">1.2. Aufbau des Netzwerkes:</h3>
+<h3 id="_aufbau_des_netzwerkes">1.4. Aufbau des Netzwerkes:</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/TheLastNetwork.png" alt="TheLastNetwork">
@@ -210,7 +233,7 @@ a {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ssh">1.3. SSH</h3>
+<h3 id="_ssh">1.5. SSH</h3>
 <div class="paragraph">
 <p>eine SSH Verbindung sollte jederzeit mit allen der Instanzen möglich sein:</p>
 </div>
@@ -534,7 +557,7 @@ reboot <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Der Bildschirmschoner sollte deaktiviert werden.
+Der Bildschirmschoner sollte deaktiviert werden, denn dies kann Rechenleistung verschwenden.
 </td>
 </tr>
 </table>
@@ -637,7 +660,7 @@ sudo apt-get install squid</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2022-03-21 08:35:46 +0100
+Last updated 2022-03-21 09:22:46 +0100
 </div>
 </div>
 </body>
