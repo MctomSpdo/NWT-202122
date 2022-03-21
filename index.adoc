@@ -20,6 +20,10 @@ Die IP-Adressen der CT und Vms:
 * Pfsense: 10.9.8.212
 * Proxy: 10.9.8.213
 
+=== Aufbau des Netzwerkes:
+
+image::TheLastNetwork.png[]
+
 === SSH
 
 eine SSH Verbindung sollte jederzeit mit allen der Instanzen möglich sein:
@@ -264,6 +268,10 @@ Installation:
 Für die Installation von PFSense werden zwei Netzwerkkarten benötigt, denn eine wird für das normale Netzwerk verwendet und die andere Karte wird für ein internes Vlan verwendet.
 
 vtnet0 -> Netzwerkkarte für das externe Netzwerk
+
+image::pfsense-1.jpg[]
+image::pfsense-2.jpg[]
+image:pfsense-3.jpg[]
 
 == Proxy
 
