@@ -13,8 +13,6 @@ ifndef::imagesdir[:imagesdir: images]
 
 Erlernen von Netzwerkaufbau und die Dokumentation des Aufbaus. Auch in der Zukunft werden wir so etwas benötigen. Falls der Fall eintritt, dass wir ein Netzwerk aufbauen und es jemand anderes Warten muss, kann derjenige nicht verstehen, wie das Netzwerk aufgebaut ist.
 
-=== Unterziele
-
 ==== Router Aufsetzung
 
 Beim Auszug wird ein neues Netzwerk aufgebaut, um es richtig aufbauen zu können und verstehen was passiert, ist dieses Projekt sehr wichtig.
