@@ -21,7 +21,7 @@ Beim Auszug wird ein neues Netzwerk aufgebaut, um es richtig aufbauen zu können
 
 Um Firewalls zu verstehen und um ein Netzwerk sicherzumachen, haben wir drei verschiedene Firewalls eingebaut. PFSense ist eine VM und der Proxy befindet sich in einem Container. UFW ist die interne Firewall, die wir in allen Maschinen außer Router und PFSense verwenden.
 
-=== IP-Adressen:
+=== IP-Adressen
 Die IP-Adressen der CT und Vms:
 
 * Router: 10.9.8.214
@@ -32,7 +32,7 @@ Die IP-Adressen der CT und Vms:
 * Pfsense: 10.9.8.212
 * Proxy: 10.9.8.213
 
-=== Aufbau des Netzwerkes:
+=== Aufbau des Netzwerkes
 
 image::TheLastNetwork.png[]
 
