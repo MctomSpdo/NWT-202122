@@ -18,6 +18,7 @@ Die IP-Adressen der CT und Vms:
 * Ngnix: 10.9.8.210
 * Lubuntu: 10.9.8.211
 * Pfsense: 10.9.8.212
+* Pfsense außen: 10.9.8.251
 * Proxy: 10.9.8.213
 
 === Aufbau des Netzwerkes:
@@ -273,6 +274,8 @@ image::pfsense-1.jpg[]
 image::pfsense-2.jpg[]
 image:pfsense-3.jpg[]
 
+NOTE: Das Webinterface wurde auf den Port 2022 umgelegt.
+
 == Proxy
 
 Der Proxy CT wurde angelegt und vorbereitet, an einer Proxy installation wird aktuell noch gearbeitet.
@@ -293,3 +296,16 @@ sudo nano /etc/squid/squid.conf
 
 .Für mehr Information und Konfigurationen
 https://phoenixnap.com/kb/setup-install-squid-proxy-server-ubuntu
+
+== PfSense firewall
+
+Als erstes wurde Lubuntu in das PFSense Netzwerk verbunden, damit wir eine
+Verbindung zu dem grafischen Userinterface aufbauen können.
+
+Dazu wurde auf Proxmox eine neue Netzwerkbridge angelegt und diese mit den folgenden
+ip - Adressen belegt:
+
+    IP: 192.168.1.30/24
+    DG: 192.168.1.1 (IP von PFSENSE)
+
+Dann kann eine Verbindung zu dem Netzwerkinterface aufgebaut werden.

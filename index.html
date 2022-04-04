@@ -130,7 +130,7 @@ a {
 <div class="details">
 <span id="author" class="author">Lydia Reiter, Spindler Thomas</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2022-03-21</span>
+<span id="revdate">2022-04-04</span>
 <br><span id="revremark">NWT</span>
 </div>
 <div id="toc" class="toc2">
@@ -163,6 +163,7 @@ a {
 </li>
 <li><a href="#_pfsense">7. PFSense</a></li>
 <li><a href="#_proxy">8. Proxy</a></li>
+<li><a href="#_pfsense_firewall">9. PfSense firewall</a></li>
 </ul>
 </div>
 </div>
@@ -194,6 +195,9 @@ a {
 </li>
 <li>
 <p>Pfsense: 10.9.8.212</p>
+</li>
+<li>
+<p>Pfsense außen: 10.9.8.251</p>
 </li>
 <li>
 <p>Proxy: 10.9.8.213</p>
@@ -605,6 +609,18 @@ Password: &lt;PASSWORD&gt;</code></pre>
 <div class="paragraph">
 <p><span class="image"><img src="images/pfsense-3.jpg" alt="pfsense 3"></span></p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Das Webinterface wurde auf den Port 2022 umgelegt.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -633,11 +649,33 @@ sudo apt-get install squid</code></pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_pfsense_firewall">9. PfSense firewall</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Als erstes wurde Lubuntu in das PFSense Netzwerk verbunden, damit wir eine
+Verbindung zu dem grafischen Userinterface aufbauen können.</p>
+</div>
+<div class="paragraph">
+<p>Dazu wurde auf Proxmox eine neue Netzwerkbridge angelegt und diese mit den folgenden
+ip - Adressen belegt:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>IP: 192.168.1.30/24
+DG: 192.168.1.1 (IP von PFSENSE)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Dann kann eine Verbindung zu dem Netzwerkinterface aufgebaut werden.</p>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2022-03-21 08:35:46 +0100
+Last updated 2022-04-04 09:48:12 +0200
 </div>
 </div>
 </body>
