@@ -130,7 +130,7 @@ a {
 <div class="details">
 <span id="author" class="author">Lydia Reiter, Spindler Thomas</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2022-04-04</span>
+<span id="revdate">2022-04-25</span>
 <br><span id="revremark">NWT</span>
 </div>
 <div id="toc" class="toc2">
@@ -138,9 +138,10 @@ a {
 <ul class="sectlevel1">
 <li><a href="#_overview">1. Overview</a>
 <ul class="sectlevel2">
-<li><a href="#_ip_adressen">1.1. IP-Adressen:</a></li>
-<li><a href="#_aufbau_des_netzwerkes">1.2. Aufbau des Netzwerkes:</a></li>
-<li><a href="#_ssh">1.3. SSH</a></li>
+<li><a href="#_ziel">1.1. Ziel</a></li>
+<li><a href="#_ip_adressen">1.2. IP-Adressen</a></li>
+<li><a href="#_aufbau_des_netzwerkes">1.3. Aufbau des Netzwerkes</a></li>
+<li><a href="#_ssh">1.4. SSH</a></li>
 </ul>
 </li>
 <li><a href="#_grundausstattung">2. Grundausstattung</a>
@@ -172,7 +173,25 @@ a {
 <h2 id="_overview">1. Overview</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_ip_adressen">1.1. IP-Adressen:</h3>
+<h3 id="_ziel">1.1. Ziel</h3>
+<div class="paragraph">
+<p>Erlernen von Netzwerkaufbau und die Dokumentation des Aufbaus. Auch in der Zukunft werden wir so etwas benötigen. Falls der Fall eintritt, dass wir ein Netzwerk aufbauen und es jemand anderes Warten muss, kann derjenige nicht verstehen, wie das Netzwerk aufgebaut ist.</p>
+</div>
+<div class="sect3">
+<h4 id="_router_aufsetzung">1.1.1. Router Aufsetzung</h4>
+<div class="paragraph">
+<p>Beim Auszug wird ein neues Netzwerk aufgebaut, um es richtig aufbauen zu können und verstehen was passiert, ist dieses Projekt sehr wichtig.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_pfsense_proxy_ufw">1.1.2. PFSense / Proxy / UFW</h4>
+<div class="paragraph">
+<p>Um Firewalls zu verstehen und um ein Netzwerk sicherzumachen, haben wir drei verschiedene Firewalls eingebaut. PFSense ist eine VM und der Proxy befindet sich in einem Container. UFW ist die interne Firewall, die wir in allen Maschinen außer Router und PFSense verwenden.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ip_adressen">1.2. IP-Adressen</h3>
 <div class="paragraph">
 <p>Die IP-Adressen der CT und Vms:</p>
 </div>
@@ -206,7 +225,7 @@ a {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_aufbau_des_netzwerkes">1.2. Aufbau des Netzwerkes:</h3>
+<h3 id="_aufbau_des_netzwerkes">1.3. Aufbau des Netzwerkes</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/TheLastNetwork.png" alt="TheLastNetwork">
@@ -214,7 +233,7 @@ a {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ssh">1.3. SSH</h3>
+<h3 id="_ssh">1.4. SSH</h3>
 <div class="paragraph">
 <p>eine SSH Verbindung sollte jederzeit mit allen der Instanzen möglich sein:</p>
 </div>
@@ -223,12 +242,20 @@ a {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">ssh root@&lt;IP-ADDR&gt; -p 2022
-
-# Root access wird bald abgeschaltet, daher:
-
-ssh user@&lt;IP_ADDR&gt; -p 2022</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">ssh user@&lt;IP_ADDR&gt; -p 2022</code></pre>
 </div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+SSH ist nicht verfügbar auf: PFSense
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -305,18 +332,6 @@ vi /etc/ssh/sshd_config</code></pre>
 
 ssh test@10.0.0.8 -p 2022</code></pre>
 </div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Derzeit werden die SSH Server auf Port 2022 umgelegt.
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p>Um den Port umzulegen, muss dies auch in systemctl umconfiguriert werden:</p>
@@ -538,7 +553,7 @@ reboot <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Der Bildschirmschoner sollte deaktiviert werden.
+Der Bildschirmschoner sollte deaktiviert werden, denn dies kann Rechenleistung verschwenden.
 </td>
 </tr>
 </table>
@@ -675,7 +690,7 @@ DG: 192.168.1.1 (IP von PFSENSE)</pre>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2022-04-04 09:48:12 +0200
+Last updated 2022-04-25 08:19:06 +0200
 </div>
 </div>
 </body>

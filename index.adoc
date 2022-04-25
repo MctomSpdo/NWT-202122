@@ -45,12 +45,10 @@ Diese läuft bei allen Maschinen auf Port 2022
 
 [source, bash]
 ----
-ssh root@<IP-ADDR> -p 2022
-
-# Root access wird bald abgeschaltet, daher:
-
 ssh user@<IP_ADDR> -p 2022
 ----
+
+NOTE: SSH ist nicht verfügbar auf: PFSense
 
 == Grundausstattung
 
@@ -99,8 +97,6 @@ ssh <USERNAME>@<HOST>
 
 ssh test@10.0.0.8 -p 2022
 ----
-
-NOTE: Derzeit werden die SSH Server auf Port 2022 umgelegt.
 
 Um den Port umzulegen, muss dies auch in systemctl umconfiguriert werden:
 
