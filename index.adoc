@@ -64,7 +64,7 @@ Diese sind wie folgt hardwaretechnisch ausgestattet:
 * 2 CPU threads (für Parallelisierung)
 * 512 MB Arbeitsspeicher
 * 1 - 2 Netzwerkinterfaces
-* 8 GB Boot drive
+* 4 / 8 GB Boot drive
 
 
 Jeder der einzelnen virtuellen Maschinen / Container hat eine gewisse Grundausstattung, und dazu gehören:
