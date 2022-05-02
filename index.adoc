@@ -15,6 +15,26 @@ Erlernen von Netzwerkaufbau und die Dokumentation des Aufbaus. Auch in der Zukun
 
 Bei dem Aufbau des Netzwerkes wurde sehr auf Sicherheit geachtet. Daher ist z.B auf jeden der Container ebenfalls auch eine Firewall installiert.
 
+==== FCAPS
+
+* FAULT management:
+* configuration
+* accounting
+* performance
+* security
+
+Bei unserem Netzwerk haben wir den Fokus vor allem auf Security gelegt. Daher haben wir jedem Container
+mit Firewalls ausgestattet, und ebenfalls automatische updates aktiviert.
+
+Dies hilft allerdings nicht bei Fault management, und kann sogar zu mehr Downtime führen, dies nehmem wir
+allerdings in kauf, und würden, (wenn wir mehr Zeit hätten), ein monitoring aufsetzen, dass diese Probleme
+feststellt und uns informiert, damit wir schnell eingreifen können.
+
+Die Konfigurationen wurden ebenfalls auf Sicherheit ausgelegt, und in der Dokumentation ergänzt.
+
+Auf die Performance wurde geachtet, indem großteils Container verwendetet werden, die effizienter als
+VMs laufen, allerdings wurde Sicherheit über Performance gestellt.
+
 ==== Router Aufsetzung
 
 Beim Auszug wird ein neues Netzwerk aufgebaut, um es richtig aufbauen zu können und verstehen was passiert, ist dieses Projekt sehr wichtig.
