@@ -28,12 +28,19 @@ mit Firewalls ausgestattet, und ebenfalls automatische updates aktiviert.
 
 Dies hilft allerdings nicht bei Fault management, und kann sogar zu mehr Downtime führen, dies nehmem wir
 allerdings in kauf, und würden, (wenn wir mehr Zeit hätten), ein monitoring aufsetzen, dass diese Probleme
-feststellt und uns informiert, damit wir schnell eingreifen können.
+feststellt und uns informiert, damit wir schnell eingreifen können. Die Container könnten (wenn fertig konfiguriert) in einem HA cluster laufen, worduch diese sehr ausfallsicher sind.
 
 Die Konfigurationen wurden ebenfalls auf Sicherheit ausgelegt, und in der Dokumentation ergänzt.
 
 Auf die Performance wurde geachtet, indem großteils Container verwendetet werden, die effizienter als
 VMs laufen, allerdings wurde Sicherheit über Performance gestellt.
+
+Backups werden automatisch von Proxmox erstellt, was dies einfach und schnell macht, auf einen alten Stand zurückzugehen.
+
+Um die Performance kümmerns sich Prof. Wagner und Thomas Himmelbauer (Sysadmin), indem Sie uns den Proxmox Server zur Verfügung stellen.
+
+Accounting gibt es in der Schulumgebung nicht wirklich, außer die Benotung.
+
 
 ==== Router Aufsetzung
 
